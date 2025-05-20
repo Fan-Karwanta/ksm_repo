@@ -2,12 +2,19 @@ import { Models } from "appwrite";
 import { Link } from "react-router-dom";
 
 import { Button } from "../ui/button";
+import { useUserContext } from "@/context/AuthContext";
 
 type UserCardProps = {
   user: Models.Document;
 };
 
 const UserCard = ({ user }: UserCardProps) => {
+  // Get current logged-in user from context
+  const { user: currentUser } = useUserContext();
+  
+  // Check if the displayed user is the same as the current logged-in user
+  const isCurrentUser = currentUser.id === user.$id;
+  
   return (
     <Link to={`/profile/${user.$id}`} className="user-card">
       <img
@@ -25,9 +32,16 @@ const UserCard = ({ user }: UserCardProps) => {
         </p>
       </div>
 
-      <Button type="button" size="sm" className="shad-button_primary px-5">
-        Follow
-      </Button>
+      {isCurrentUser ? (
+        <Button type="button" size="sm" className="shad-button_secondary px-5" disabled>
+          You
+        </Button>
+      ) : (
+        
+        <Button type="button" size="sm" className="shad-button_primary px-5">
+          View Profile
+        </Button>
+      )}
     </Link>
   );
 };
