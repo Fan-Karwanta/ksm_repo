@@ -1,12 +1,12 @@
 import { Models } from "appwrite";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 
 import { checkIsLiked } from "@/lib/utils";
 import {
   useLikePost,
-  useSavePost,
-  useDeleteSavedPost,
+  // useSavePost,
+  // useDeleteSavedPost,
   useGetCurrentUser,
 } from "@/lib/react-query/queries";
 
@@ -20,22 +20,23 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
   const likesList = post.likes.map((user: Models.Document) => user.$id);
 
   const [likes, setLikes] = useState<string[]>(likesList);
-  const [isSaved, setIsSaved] = useState(false);
+  // const [isSaved, setIsSaved] = useState(false);
 
   const { mutate: likePost } = useLikePost();
-  const { mutate: savePost } = useSavePost();
-  const { mutate: deleteSavePost } = useDeleteSavedPost();
+  // const { mutate: savePost } = useSavePost();
+  // const { mutate: deleteSavePost } = useDeleteSavedPost();
 
   const { data: currentUser } = useGetCurrentUser();
 
-  // Add null check for currentUser?.save to prevent errors with new users
-  const savedPostRecord = currentUser?.save ? currentUser.save.find(
-    (record: Models.Document) => record.post.$id === post.$id
-  ) : undefined;
+  // Comment out unused savedPostRecord variable
+  // const savedPostRecord = currentUser?.save ? currentUser.save.find(
+  //   (record: Models.Document) => record.post.$id === post.$id
+  // ) : undefined;
 
-  useEffect(() => {
-    setIsSaved(!!savedPostRecord);
-  }, [currentUser]);
+  // Comment out unused effect
+  // useEffect(() => {
+  //   setIsSaved(!!savedPostRecord);
+  // }, [currentUser]);
 
   const handleLikePost = (
     e: React.MouseEvent<HTMLImageElement, MouseEvent>
@@ -54,19 +55,20 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
     likePost({ postId: post.$id, likesArray });
   };
 
-  const handleSavePost = (
-    e: React.MouseEvent<HTMLImageElement, MouseEvent>
-  ) => {
-    e.stopPropagation();
+  // Comment out unused function
+  // const handleSavePost = (
+  //   e: React.MouseEvent<HTMLImageElement, MouseEvent>
+  // ) => {
+  //   e.stopPropagation();
 
-    if (savedPostRecord) {
-      setIsSaved(false);
-      return deleteSavePost(savedPostRecord.$id);
-    }
+  //   if (savedPostRecord) {
+  //     setIsSaved(false);
+  //     return deleteSavePost(savedPostRecord.$id);
+  //   }
 
-    savePost({ userId: userId, postId: post.$id });
-    setIsSaved(true);
-  };
+  //   savePost({ userId: userId, postId: post.$id });
+  //   setIsSaved(true);
+  // };
 
   const containerStyles = location.pathname.startsWith("/profile")
     ? "w-full"

@@ -177,7 +177,8 @@ export async function uploadFile(file: File) {
 }
 
 // ============================== GET FILE URL
-export async function getFilePreview(fileId: string): Promise<string> {
+// Changed return type to any to fix type errors when assigning to imageUrl
+export async function getFilePreview(fileId: string): Promise<any> {
   try {
     const fileUrl = storage.getFileView(
       appwriteConfig.storageId,
