@@ -7,7 +7,7 @@ import {
   useLikePost,
   // useSavePost,
   // useDeleteSavedPost,
-  useGetCurrentUser,
+  // useGetCurrentUser, // Commented out as it's no longer needed
 } from "@/lib/react-query/queries";
 
 type PostStatsProps = {
@@ -26,7 +26,8 @@ const PostStats = ({ post, userId }: PostStatsProps) => {
   // const { mutate: savePost } = useSavePost();
   // const { mutate: deleteSavePost } = useDeleteSavedPost();
 
-  const { data: currentUser } = useGetCurrentUser();
+  // Commented out as it's no longer needed
+  // const { data: currentUser } = useGetCurrentUser();
 
   // Comment out unused savedPostRecord variable
   // const savedPostRecord = currentUser?.save ? currentUser.save.find(
