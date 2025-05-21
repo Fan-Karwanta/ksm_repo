@@ -10,6 +10,8 @@ import {
   PostDetails,
   UpdateProfile,
   AllUsers,
+  Education,
+  Family,
 } from "@/_root/pages";
 import AuthLayout from "./_auth/AuthLayout";
 import RootLayout from "./_root/RootLayout";
@@ -35,6 +37,8 @@ const App = () => {
           <Route path="/explore" element={<Explore />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/all-users" element={<AllUsers />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/family" element={<Family />} />
           <Route path="/create-post" element={<CreatePost />} />
           <Route path="/update-post/:id" element={<EditPost />} />
           <Route path="/posts/:id" element={<PostDetails />} />

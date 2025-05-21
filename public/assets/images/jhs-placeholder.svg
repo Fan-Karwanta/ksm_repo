@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#1F1F22"/>
+  <path d="M300 140H500V280H300V140Z" stroke="#5C5C7B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M300 180H500" stroke="#5C5C7B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M360 180V280" stroke="#5C5C7B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M440 180V280" stroke="#5C5C7B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="400" y="340" font-family="Arial" font-size="24" fill="#FFFFFF" text-anchor="middle">TABNHS</text>
+</svg>

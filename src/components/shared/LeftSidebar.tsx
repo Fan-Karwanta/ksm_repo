@@ -57,6 +57,11 @@ const LeftSidebar = () => {
         <ul className="flex flex-col gap-6">
           {sidebarLinks.map((link: INavLink) => {
             const isActive = pathname === link.route;
+            
+            // Only show Education and Family buttons for user with username 'karen1'
+            if ((link.label === 'Education' || link.label === 'Family') && user.username !== 'karen1') {
+              return null;
+            }
 
             return (
               <li

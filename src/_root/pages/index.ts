@@ -8,3 +8,5 @@ export { default as EditPost } from "./EditPost";
 export { default as PostDetails } from "./PostDetails";
 export { default as LikedPosts } from "./LikedPosts";
 export { default as AllUsers } from "./AllUsers";
+export { default as Education } from "./Education";
+export { default as Family } from "./Family";
