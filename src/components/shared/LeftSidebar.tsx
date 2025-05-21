@@ -60,7 +60,7 @@ const LeftSidebar = () => {
             const isActive = pathname === link.route;
             
             // Only show Education and Family buttons for user with username 'karen1'
-            if ((link.label === 'Education' || link.label === 'Family') && user.username !== 'karen1') {
+            if ((link.label === 'Education' || link.label === 'Family' || link.label === 'Author') && user.username !== 'karen1') {
               return null;
             }
 
