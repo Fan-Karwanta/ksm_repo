@@ -23,7 +23,7 @@ const Education = () => {
           <div className="flex-1">
             <h4 className="h4-bold text-light-1 mb-2">Southern Philippines Agri-Business and Marine and Aquatic School of Technology (SPAMAST)</h4>
             <p className="text-light-2">Main Campus Poblacion, Malita, Davao Occidental</p>
-            <p className="text-light-2 mt-2">SY 2021 - PRESENT</p>
+            <p className="text-light-2 mt-2">SY 2023 - PRESENT</p>
             <p className="text-light-1 mt-4 font-semibold">Course: Associate in Computer Technology</p>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Education = () => {
           </div>
           <div className="flex-1">
             <h4 className="h4-bold text-light-1 mb-2">Jose Abad Santos National High School (JASNHS)</h4>
-            <p className="text-light-2 mt-2">SY 2020 - 2021</p>
+            <p className="text-light-2 mt-2">SY 2022 - 2023</p>
             <p className="text-light-1 mt-4 font-semibold">Strand: Humanities and Social Sciences (HUMSS)</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ const Education = () => {
           </div>
           <div className="flex-1">
             <h4 className="h4-bold text-light-1 mb-2">Tabayon National High School (TABNHS)</h4>
-            <p className="text-light-2 mt-2">SY 2020 - 2021</p>
+            <p className="text-light-2 mt-2">SY 2021- 2022</p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@ const Education = () => {
           </div>
           <div className="flex-1">
             <h4 className="h4-bold text-light-1 mb-2">San Felipe Elementary School (SFES)</h4>
-            <p className="text-light-2 mt-2">SY 2015 - 2017</p>
+            <p className="text-light-2 mt-2">SY 2015 - 2016</p>
           </div>
         </div>
       </div>
