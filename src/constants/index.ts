@@ -4,13 +4,11 @@ export const sidebarLinks = [
     route: "/",
     label: "Home",
   },
-
   {
     imgURL: "/assets/icons/people.svg",
     route: "/all-users",
     label: "People",
   },
-
   {
     imgURL: "/assets/icons/gallery-add.svg",
     route: "/create-post",
@@ -26,7 +24,11 @@ export const sidebarLinks = [
     route: "/family",
     label: "Family",
   },
-
+  {
+    imgURL: "/assets/icons/author.svg",
+    route: "/author",
+    label: "Author",
+  },
 ];
 
 export const bottombarLinks = [
