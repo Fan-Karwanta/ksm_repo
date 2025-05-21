@@ -58,7 +58,7 @@ const Education = () => {
         <div className="bg-dark-3 p-5 rounded-xl flex flex-col md:flex-row gap-5">
           <div className="flex-shrink-0 w-full md:w-1/3 flex justify-center items-center">
             <img 
-              src="/assets/images/junior_highschool.jpeg" 
+              src="/assets/images/jhs_pic.jpeg" 
               alt="TABNHS" 
               className="rounded-lg object-cover w-full max-h-60"
             />
@@ -72,7 +72,7 @@ const Education = () => {
 
       {/* Primary Education */}
       <div className="flex-between w-full max-w-5xl mt-16 mb-7">
-        <h3 className="body-bold md:h3-bold">Primary</h3>
+        <h3 className="body-bold md:h3-bold">Primary (Elementary)</h3>
       </div>
       <div className="flex flex-col gap-9 w-full max-w-5xl mb-10">
         <div className="bg-dark-3 p-5 rounded-xl flex flex-col md:flex-row gap-5">
